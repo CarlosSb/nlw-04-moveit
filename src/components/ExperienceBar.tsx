@@ -7,9 +7,10 @@ export function ExperienceBar() {
     ChallengesContext
   );
 
-  let parcenteToNextLevel =
+  let parcenteToNextLevel = 0;
+  parcenteToNextLevel =
     Math.round(currentExperience * 100) / experienceToNextLevel;
-  
+
   parcenteToNextLevel = parcenteToNextLevel ? parcenteToNextLevel : 0;
 
   return (
